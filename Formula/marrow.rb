@@ -14,6 +14,18 @@ class Marrow < Formula
     system "cargo", "install", "--locked", "--root", prefix, "--path", "crates/marrow-web"
   end
 
+  def caveats
+    <<~EOS
+      Next steps:
+        cd your-project
+        marrow setup            # wire this project into Claude Code (add --global for every project)
+        # then restart Claude Code
+
+      Onboard an existing repo with `marrow ingest`, and capture a session anytime with /marrow-save.
+      Docs: https://github.com/aryawidjaja/marrow
+    EOS
+  end
+
   test do
     assert_match "marrow 0.1.1", shell_output("#{bin}/marrow --version")
   end
