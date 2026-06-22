@@ -22,6 +22,11 @@ class Marrow < Formula
         # then restart Claude Code
 
       Onboard an existing repo with `marrow ingest`, and capture a session anytime with /marrow-save.
+
+      Search is keyword by default. For smarter meaning-based recall, enable semantic search (opt-in):
+        cargo install --git https://github.com/aryawidjaja/marrow marrow-cli marrow-mcp --features embed-fastembed
+        marrow embed fastembed
+
       Docs: https://github.com/aryawidjaja/marrow
     EOS
   end
