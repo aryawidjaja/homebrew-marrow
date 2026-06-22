@@ -1,8 +1,8 @@
 class Marrow < Formula
   desc "Persistent, shared memory for AI agents - so they stop forgetting and stop colliding"
   homepage "https://github.com/aryawidjaja/marrow"
-  url "https://github.com/aryawidjaja/marrow/archive/refs/tags/v0.1.3.tar.gz"
-  sha256 "0c23dcd166cc8dcc4a7089ec1785391ef3ee4ba6fbd8953bbb28b002f172a5a4"
+  url "https://github.com/aryawidjaja/marrow/archive/refs/tags/v0.1.4.tar.gz"
+  sha256 "80a846505cc7bbd72f239d5f86b7ae11f48dfb7c44f3f8de49909672af53638e"
   license "AGPL-3.0-only"
   head "https://github.com/aryawidjaja/marrow.git", branch: "main"
 
@@ -27,6 +27,6 @@ class Marrow < Formula
   end
 
   test do
-    assert_match "marrow 0.1.3", shell_output("#{bin}/marrow --version")
+    assert_match "marrow 0.1.4", shell_output("#{bin}/marrow --version")
   end
 end
