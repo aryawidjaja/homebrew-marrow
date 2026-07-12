@@ -1,8 +1,8 @@
 class MarrowSemantic < Formula
   desc "Marrow with semantic search built in (local fastembed embeddings)"
   homepage "https://github.com/aryawidjaja/marrow"
-  url "https://github.com/aryawidjaja/marrow/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "cec1c8026a728cc805d471ab7d3c413aaacae80bbc2254cad54009ad1896cc4c"
+  url "https://github.com/aryawidjaja/marrow/archive/refs/tags/v0.2.1.tar.gz"
+  sha256 "aab3192bc15ebcbaa478478aa14b988dc630fd71799ea1cf0fcadbd9d9a1741c"
   license "AGPL-3.0-only"
   head "https://github.com/aryawidjaja/marrow.git", branch: "main"
 
@@ -29,6 +29,6 @@ class MarrowSemantic < Formula
   end
 
   test do
-    assert_match "marrow 0.2.0", shell_output("#{bin}/marrow --version")
+    assert_match "marrow 0.2.1", shell_output("#{bin}/marrow --version")
   end
 end
