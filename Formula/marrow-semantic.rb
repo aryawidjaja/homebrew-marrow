@@ -2,7 +2,7 @@ class MarrowSemantic < Formula
   desc "Marrow with semantic search built in (local fastembed embeddings)"
   homepage "https://github.com/aryawidjaja/marrow"
   url "https://github.com/aryawidjaja/marrow/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "c4acf1c2eb7bef991c1c577c2f18b6acbd1b2dce1cc0b41edffdb4243d26de36"
+  sha256 "1a67c880c5bd299730819f909f0d37b71d4c238ae3598f41fb04517d8644453d"
   license "AGPL-3.0-only"
   head "https://github.com/aryawidjaja/marrow.git", branch: "main"
 
